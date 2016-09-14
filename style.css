@@ -1,0 +1,69 @@
+html {
+  background-color: red;
+}
+
+form {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: courier;
+  font-size: 5em;
+}
+
+.boxes {
+  position: absolute;
+  left: -250em;
+}
+
+label {
+  display: block;
+  width: 135px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.boxes + label {
+  font-size: 2em;
+  background-color: #FF8888;
+  font-weight: bold;
+  font-family: tahoma;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px;
+  transition: box-shadow 0.3s linear;
+}
+
+.boxes:checked + label {
+  background-color: #009900;
+  box-shadow: 0 0 0 0;
+  transition: box-shadow 0.2s linear:
+}
+
+.status {
+  text-align: center;
+  font-size: 3em;
+  font-family: courier;
+  font-weight: bold;
+}
+
+#nogo {
+  animation: blink 2s linear infinite;
+  background-color: #440000;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: .75; }
+  50% { opacity: .50; }
+  75% { opacity .25; }
+  100% { opacity 0; }
+}
+
+#go {
+  display: none;
+}
